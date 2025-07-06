@@ -273,6 +273,9 @@ body {
     .hero-image-container img {
         order: 2;
     }
+    .art-credit {
+        order: 3; 
+    }
     .dialogue-box::after {
         display: none;
     }
