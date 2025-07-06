@@ -63,6 +63,8 @@ body {
 .progress-bar-fill {
     height: 100%;
     background-color: var(--primary-color);
+    animation: fill-progress 1.5s ease-out forwards;
+
 }
 
 
@@ -86,6 +88,13 @@ body {
     height: auto;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
+}
+
+.art-credit {
+    color: var(--border-color);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 
@@ -236,6 +245,15 @@ body {
 }
 
 
+/* --- Animation for the Progress Bar --- */
+@keyframes fill-progress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--progress-width);
+    }
+}
 /* --- Responsive for Mobile --- */
 @media (max-width: 700px) {
     .hero {
@@ -270,3 +288,4 @@ body {
         display: none; /* Hide the '>' on mobile for a cleaner look */
     }
 }
+

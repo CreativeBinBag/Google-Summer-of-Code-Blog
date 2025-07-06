@@ -16,14 +16,15 @@
         <div class="progress-bar-container">
             <div class="progress-bar-label">PROJECT PROGRESS</div>
             <div class="progress-bar">
-                <div class="progress-bar-fill" style="width: 13.5%;"></div>
+                <div class="progress-bar-fill" style="--progress-width: 40.5%;"></div>
             </div>
         </div>
 
 
         <header class="hero">
             <div class="hero-image-container">
-                <img src="images/hero image.png" alt="Pixel art of a person coding at night">
+                <img src="images/hero-image.png" alt="Pixel art of a person coding at night">
+                <p class="art-credit">Art by: Fatima Jahan Ena</p> 
                 <div class="dialogue-box">
                     <p>
                         I'm happy to be selected for Google Summer of Code 2025! I'll be working with NumFOCUS to build a user-friendly example gallery for <a href = "https://github.com/vprusso/toqito">|toqito⟩ </a>, a library for quantum information theory. I feel very lucky that I get to work with two amazingly talented and kind mentors: <a href = "https://github.com/vprusso">Vincent Russo</a> and <a href = "https://github.com/purva-thakre">Purva Thakre</a>.
@@ -49,7 +50,27 @@
                 <h2 class="entry-title">Week 3: PBR Theorem Example</h2>
                 <p class="entry-date">June 20, 2025</p>
                 <div class="entry-content">
-                    <p>I am happy that my last PR (<a href = "https://github.com/vprusso/toqito/pull/1252"> Finalize Sphinx-Gallery</a>) got ✨ merged ✨! Right now, I am working on the examples in full swing. So far, I have opened the <a href = "https://github.com/vprusso/toqito/pull/1269">Pull Request</a>, and I will refine it based on my mentors' feedback. I also opened a <a href="https://github.com/vprusso/toqito/issues/1270"> New Issue</a> suggesting an example on testing the Antidistinguishability Threshold for Equiangular States.</p>
+                    <p>I am happy that my last PR (<a href = "https://github.com/vprusso/toqito/pull/1252"> Finalize Sphinx-Gallery</a>) got ✨ merged ✨! Right now, I am working on the examples in full swing. So far, I have opened the <a href = "https://github.com/vprusso/toqito/pull/1269">Pull Request</a>, and I will refine it based on my mentors' feedback. I also opened a <a href="https://github.com/vprusso/toqito/issues/1270"> New Issue</a> suggesting an example on testing the Antidistinguishability Threshold for Equiangular States.</p>              
+                </div>
+            </article>
+
+            <article class="timeline-entry success">
+                <h2 class="entry-title">Week 4: First Example Merged!</h2>
+                <p class="entry-date">July 1st, 2025</p>
+                <div class="entry-content">
+                <p> My PBR Theorem Example PR got ✨ merged ✨!<a href = "https://github.com/vprusso/toqito/pull/1269"> You can check it out here </a>. Working on this was super exciting because the <a href = "https://drive.google.com/file/d/1hnhFzmTy4GpcN4jSW3514AeXWNKLMsdX/view?usp=sharing">PBR paper</a> is one of my all-time favorites. It asks a very fundamental question - what is a quantum state, really? Most physicists find the epistemic view of the quantum state very comfortable... but the PBR experiment show that under the epistemic assumption, you could perform a measurement that would sometimes tell you for certain that a system wasn't prepared in a state that it could have been prepared in, which is impossible! Also, I find the language of the paper very accessible I was really struggling to hide the plot code generated using matplotlib in the final build, but Purva said that it's fine if the code shows. I got to learn how to replicate the results from the paper, which is one of my favorite papers of all time, using matplotlib.
+                        
+            </article>
+            
+            <article class="timeline-entry challenge">
+                <h2 class="entry-title">Week 5: Antidistinguishability Examples</h2>
+                <p class="entry-date">July 6, 2025</p>
+                <div class="entry-content">
+                    I worked on an example for the Antidistinguishability Threshold for Equiangular States and made a <a href = "https://github.com/vprusso/toqito/pull/1280">Pull Request</a> on the 4th of July. This example shows how we can  numerically verify a tight bound presented in the paper <a href="https://drive.google.com/file/d/1ZPTYHtrFed1AKtYIzqcgSCjIJ1kDyO9c/view?usp=sharing">"Tight bounds for antidistinguishability and circulant sets of pure quantum state"</a> by Johnston et. al and visualize the “sharp cliff” where this property changes. I would like to mention that I really enjoyed reading this paper as it  powerfully analyzes the concept of "antidistinguishability", which is very important to the PBR proof. It's beautiful how this paper makes it simple to check if states are "antidistinguishable" by showing it only depends on the mathematical overlaps between the states, not on finding a complex quantum measurement. I recommend!
+                    <br><br>
+                    Anyway, I realized that in the description of the <a href="https://github.com/vprusso/toqito/issues/1270"> GitHub Issue</a> I had opened earlier, I mistakenly wrote that we could use the <a href="https://github.com/vprusso/toqito/blob/master/toqito/matrix_ops/vectors_from_gram_matrix.py">vector_to_gram_matrix.py</a> function from |toqito⟩ for this example. I have explained in the pull request description that it was in the wrong direction. 
+                    <br><br>
+                    This <a href = "https://github.com/vprusso/toqito/pull/1282">Pull Request</a> is for another example based on the same paper, which shows how we can numerically verify a powerful necessary and sufficient condition based on the eigenvalues of the states’ Gram matrix, as presented in the paper. This is a very important result from the paper (Theorem 5.1). In the "furthermore" part, the proof is a beautiful chain of equivalences using the concept of dual cones. More reasons to appreciate the paper! As usual, I will refine both PRs based on my mentors' feedback. 
                 </div>
             </article>
         </main>
