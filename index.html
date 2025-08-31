@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nafisa's GSoC 2025 Log</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link href = "style.css" type = "text/css" rel = "stylesheet">
-
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+    
 </head>
 <body>
 
     <div class="container">
 
-        <!-- update the inline "width" style to show progress -->
         <div class="progress-bar-container">
             <div class="progress-bar-label">PROJECT PROGRESS</div>
             <div class="progress-bar">
-                <div class="progress-bar-fill" style="--progress-width: 40.5%;"></div>
+                <div class="progress-bar-fill" style="--progress-width: 100%;"></div>
             </div>
         </div>
 
@@ -34,46 +35,184 @@
             </div>
         </header>
 
-        <main class="timeline">
-            <!-- To add a new post, copy an 'timeline-entry' block and paste it here. -->
+        <section class="summary">
+            <h2>Briefing</h2>
+            <p>
+                For me, GSoC 2025 was all about building a user-friendly example gallery for <a href = "https://github.com/vprusso/toqito">|toqito⟩ </a>! I got to dive into some amazing research papers and turn their powerful ideas into interactive tutorials. I wanted to show how <a href = "https://github.com/vprusso/toqito">|toqito⟩ </a> can be a powerful tool for anyone looking to replicate scientific results, explore deep quantum concepts, and get their hands dirty with quantum information theory.
+            </p>
             
-            <!-- Use .success class for achievements -->
-            <article class="timeline-entry success">
-                <h2 class="entry-title">Weeks 1-2: Gallery Infrastructure</h2>
-                <p class="entry-date">June 14, 2025</p>
-                <div class="entry-content">
-                    <p> I unfortunately caught COVID before June 2nd and remained bedridden for weeks, so it's been a little difficult to catch up. However, once I started feeling better, I worked on finalizing Sphinx-Gallery for |toqito⟩. During this time I read Sphinx-Gallery documentation extensively. I was particularly facing some issues generating thumbnails and getting the references to render correctly, but in the end I figured it out and then felt great! </p>
-                </div>
-            </article>
+            <h2>Merged Pull Requests</h2>
+            <p>Here’s a look at all the new content and fixes that were merged/approved into the project during GSoC. Each link leads to a GitHub Pull Request with all the details.</p>
+            <ul>
+                <li><strong>Building the Infrastructure</strong>
+                    <ul>
+                        <li><a href="https://github.com/vprusso/toqito/pull/1252" target="_blank">[PR #1252] Finalize Sphinx-Gallery Infrastructure</a></li>
+                    </ul>
+                </li>
+                <li><strong>Tutorials</strong>
+                    <ul>
+                        <li><a href="https://github.com/vprusso/toqito/pull/1269" target="_blank">[PR #1269] PBR Theorem Example</a></li>
+                        <li><a href="https://github.com/vprusso/toqito/pull/1280" target="_blank">[PR #1280] Antidistinguishability Threshold for Equiangular States</a></li>
+                        <li><a href="https://github.com/vprusso/toqito/pull/1282" target="_blank">[PR #1282] Antidistinguishability Condition for Circulant States</a></li>
+                         <li><a href="https://github.com/vprusso/toqito/pull/1290" target="_blank">[PR #1290] Pretty Good & Pretty Bad Measurement Tutorial</a></li>
+                         <li><a href="https://github.com/vprusso/toqito/pull/1303" target="_blank">[PR #1303] Bit Commitment Failure as an Extended Nonlocal Game</a></li>
+                    </ul>
+                </li>
+                <li><strong>Polishing & Bug Squashing</strong>
+                    <ul>
+                        <li><a href="https://github.com/vprusso/toqito/pull/1288" target="_blank">[PR #1288] Fix Docstrings in Measurements Module</a></li>
+                        <li><a href="https://github.com/vprusso/toqito/pull/1297" target="_blank">[PR #1297] Move Examples Folder to Docs for Clarity</a></li>
+                         <li><a href="https://github.com/vprusso/toqito/pull/1301" target="_blank">[PR #1301] Resolve Doc Build Warnings</a></li>
+                         <li><a href="https://github.com/vprusso/toqito/pull/1313" target="_blank">[PR #1313] Refactor and Reorder Tutorials</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-            <article class="timeline-entry challenge">
-                <h2 class="entry-title">Week 3: PBR Theorem Example</h2>
-                <p class="entry-date">June 20, 2025</p>
-                <div class="entry-content">
-                    <p>I am happy that my last PR (<a href = "https://github.com/vprusso/toqito/pull/1252"> Finalize Sphinx-Gallery</a>) got ✨ merged ✨! Right now, I am working on the examples in full swing. So far, I have opened the <a href = "https://github.com/vprusso/toqito/pull/1269">Pull Request</a>, and I will refine it based on my mentors' feedback. I also opened a <a href="https://github.com/vprusso/toqito/issues/1270"> New Issue</a> suggesting an example on testing the Antidistinguishability Threshold for Equiangular States.</p>              
-                </div>
-            </article>
 
-            <article class="timeline-entry success">
-                <h2 class="entry-title">Week 4: First Example Merged!</h2>
-                <p class="entry-date">July 1st, 2025</p>
-                <div class="entry-content">
-                <p> My PBR Theorem Example PR got ✨ merged ✨!<a href = "https://github.com/vprusso/toqito/pull/1269"> You can check it out here </a>. Working on this was super exciting because the <a href = "https://drive.google.com/file/d/1hnhFzmTy4GpcN4jSW3514AeXWNKLMsdX/view?usp=sharing">PBR paper</a> is one of my all-time favorites. It asks a very fundamental question - what is a quantum state, really? Most physicists find the epistemic view of the quantum state very comfortable... but the PBR experiment show that under the epistemic assumption, you could perform a measurement that would sometimes tell you for certain that a system wasn't prepared in a state that it could have been prepared in, which is impossible! Also, I find the language of the paper very accessible I was really struggling to hide the plot code generated using matplotlib in the final build, but Purva said that it's fine if the code shows. I got to learn how to replicate the results from the paper, which is one of my favorite papers of all time, using matplotlib.
-                        
-            </article>
-            
-            <article class="timeline-entry challenge">
-                <h2 class="entry-title">Week 5: Antidistinguishability Examples</h2>
-                <p class="entry-date">July 6, 2025</p>
-                <div class="entry-content">
-                    I worked on an example for the Antidistinguishability Threshold for Equiangular States and made a <a href = "https://github.com/vprusso/toqito/pull/1280">Pull Request</a> on the 4th of July. This example shows how we can  numerically verify a tight bound presented in the paper <a href="https://drive.google.com/file/d/1ZPTYHtrFed1AKtYIzqcgSCjIJ1kDyO9c/view?usp=sharing">"Tight bounds for antidistinguishability and circulant sets of pure quantum state"</a> by Johnston et. al and visualize the “sharp cliff” where this property changes. I would like to mention that I really enjoyed reading this paper as it  powerfully analyzes the concept of "antidistinguishability", which is very important to the PBR proof. It's beautiful how this paper makes it simple to check if states are "antidistinguishable" by showing it only depends on the mathematical overlaps between the states, not on finding a complex quantum measurement. I recommend!
-                    <br><br>
-                    Anyway, I realized that in the description of the <a href="https://github.com/vprusso/toqito/issues/1270"> GitHub Issue</a> I had opened earlier, I mistakenly wrote that we could use the <a href="https://github.com/vprusso/toqito/blob/master/toqito/matrix_ops/vectors_from_gram_matrix.py">vector_to_gram_matrix.py</a> function from |toqito⟩ for this example. I have explained in the pull request description that it was in the wrong direction. 
-                    <br><br>
-                    This <a href = "https://github.com/vprusso/toqito/pull/1282">Pull Request</a> is for another example based on the same paper, which shows how we can numerically verify a powerful necessary and sufficient condition based on the eigenvalues of the states’ Gram matrix, as presented in the paper. This is a very important result from the paper (Theorem 5.1). In the "furthermore" part, the proof is a beautiful chain of equivalences using the concept of dual cones. More reasons to appreciate the paper! As usual, I will refine both PRs based on my mentors' feedback. 
-                </div>
-            </article>
-        </main>
+        <div class="live-gallery">
+            <a href="https://toqito.readthedocs.io/en/latest/auto_examples/index.html">You can check out the live gallery here.</a>
+
+        </div>
+
+        </section>
+
+
+
+        <div class="transition-divider">
+            <h2>How it was...week-by-week.</h2>
+            <p>The summary above shows the final results, but the real story is in the day-to-day process. Here’s a look back at the challenges, breakthroughs, and learning moments from the project.</p>
+        </div>
+
+<main class="timeline">
+
+    <article class="timeline-entry success">
+        <h2 class="entry-title">Weeks 1-2: Building the Gallery</h2>
+        <p class="entry-date">June 15, 2025</p>
+        <div class="entry-content">
+            <p>I unfortunately caught COVID before June 2nd and remained bedridden for weeks, so it's been a little difficult to catch up. However, once I started feeling better, I worked on finalizing Sphinx-Gallery for |toqito⟩. During this time I read Sphinx-Gallery documentation extensively. I was particularly facing some issues generating thumbnails and getting the references to render correctly, but in the end I figured it out and then felt great!</p>
+        </div>
+    </article>
+
+    <article class="timeline-entry challenge">
+        <h2 class="entry-title">Week 3: The PBR Theorem Example</h2>
+        <p class="entry-date">June 22, 2025</p>
+        <div class="entry-content">
+            <p>I'm so happy that my last PR (<a href="https://github.com/vprusso/toqito/pull/1252">Finalize Sphinx-Gallery</a>) got ✨ merged ✨! Now, I'm working on the examples in full swing. I've opened the <a href="https://github.com/vprusso/toqito/pull/1269">Pull Request</a> for the <a href="https://drive.google.com/file/d/1hnhFzmTy4GpcN4jSW3514AeXWNKLMsdX/view?usp=sharing"> PBR Theorem</a>, and I'll be refining it based on my mentors' feedback. I also opened a <a href="https://github.com/vprusso/toqito/issues/1270">New Issue</a> suggesting an example on testing the Antidistinguishability Threshold for Equiangular States.</p>              
+        </div>
+    </article>
+
+    <article class="timeline-entry success">
+        <h2 class="entry-title">Week 4: First Example Merged!</h2>
+        <p class="entry-date">July 1st, 2025</p>
+        <div class="entry-content">
+        <p> My PBR Theorem Example PR got ✨ merged ✨! <a href="https://github.com/vprusso/toqito/pull/1269">You can check it out here</a>. Working on this was super exciting because the PBR paper is one of my all-time favorites. It asks a very fundamental question: is the quantum state a real physical thing (an ontic state), or is it just a representation of our knowledge about it (an epistemic state)? The PBR experiment shows that if you assume the state is purely epistemic, you run into a contradiction. Under that assumption, you could devise a measurement that would sometimes tell you with certainty that a system <b>wasn't</b> prepared in a specific state, even though the preparation procedure allowed for it. That's a logical impossibility, which means the simple epistemic view can't be the full story! It was pretty exciting to replicate the results from the paper using |toqito⟩ and matplotlib.</p>
+        </div>        
+    </article>
+
+    <article class="timeline-entry challenge">
+        <h2 class="entry-title">Week 5: Exploring Antidistinguishability</h2>
+        <p class="entry-date">July 6, 2025</p>
+        <div class="entry-content">
+            <p>I worked on an example for the "Antidistinguishability Threshold for Equiangular States" and opened a <a href="https://github.com/vprusso/toqito/pull/1280">Pull Request</a>. This example numerically verifies a tight bound from the paper <a href="https://drive.google.com/file/d/1ZPTYHtrFed1AKtYIzqcgSCjIJ1kDyO9c/view?usp=sharing">"Tight bounds for antidistinguishability and circulant sets of pure quantum states"</a> by Johnston et. al., visualizing the “sharp cliff” where this property changes. I really enjoyed this paper; it powerfully analyzes "antidistinguishability," a key concept for the PBR proof. It beautifully simplifies the problem, showing that checking for antidistinguishability doesn't require finding a complex quantum measurement—it's a property of the states' Gram matrix alone. I recommend!</p>
+            <br>
+            <p>This <a href="https://github.com/vprusso/toqito/pull/1282">second Pull Request</a> is for another example based on the same paper. It demonstrates a powerful condition from Theorem 5.1 for circulant sets of states. This result shows that a set is antidistinguishable if and only if its Gram matrix eigenvalues satisfy:</p>
+            \[ \sqrt{\lambda_0} \le \sum_{j=1}^{n-1} \sqrt{\lambda_j} \]
+            <p>Here, \(\lambda_0\) is the <em>largest</em> eigenvalue. It's a remarkably elegant condition! The proof is a beautiful chain of equivalences using the concept of dual cones. More reasons to appreciate this paper! As usual, I'll refine both PRs based on my mentors' feedback.</p>
+        </div>
+    </article>
+
+    <article class="timeline-entry success">
+        <h2 class="entry-title">Weeks 6-7: New Paper, New Perspectives</h2>
+        <p class="entry-date">July 20, 2025</p>
+        <div class="entry-content">
+            <p>Both examples on state antidistinguishability got ✨ merged ✨! This clears the way for a new paper: the paper <a href="https://drive.google.com/file/d/1rc3Wcm9XBETFf58AcoEvQPXGW4l3tgh4/view?usp=sharing"><i>"The pretty bad measurement"</i></a> by McIrvin et. al. To tackle this, I needed to study the measurements module in |toqito⟩ more deeply.</p>
+            <p>The paper neatly defines two complementary tasks: quantum state discrimination (guessing the correct state) and quantum state exclusion (guessing a state that <b>wasn't</b> sent). The figures they included were super helpful:</p>
+            <figure>
+                <img src="images/discrimination.png" alt="Quantum state discrimination diagram">
+                <figcaption>Figure 1: Quantum state discrimination</figcaption>
+            </figure>
+            <figure>
+                <img src="images/exclusion.png" alt="Quantum state exclusion diagram">
+                <figcaption>Figure 2: Quantum state exclusion</figcaption>
+            </figure>
+            <p>Of course, quantum state exclusion is where my recent work connects. The authors explain:</p>
+            <blockquote>
+                Unlike quantum state discrimination, it is much more difficult to determine when Bob has a perfect strategy to perfectly win this game, i.e., when he can exclude a state without error. If this is the case, we say that the states are <b>antidistinguishable</b>.
+            </blockquote>
+            <p>Such a treat, getting to study antidistinguishability from another angle!</p>
+        </div>
+    </article>
+
+    <article class="timeline-entry success">
+        <h2 class="entry-title">Weeks 8-11: Reviews, Merges, and Doc-Fixing!</h2>
+        <p class="entry-date">August 17, 2025</p>
+        <div class="entry-content">
+            <p>Before creating the tutorial for the Pretty Good and Pretty Bad Measurements (PGM and PBM), I first had to <a href="https://github.com/vprusso/toqito/pull/1288">fix some inaccuracies in the docstrings</a> of the measurements module. While reading, I realized the foundational work on PGMs by Viacheslav P. Belavkin (1975) and Hughston, Jozsa & Wootters (1993) was essential context, so I clarified the history in the docstrings.</p>
+            <p>At the same time, I started a <a href="https://github.com/vprusso/toqito/pull/1290">draft PR</a> for the tutorial. Working on a draft PR together makes iterations so much smoother for everyone. My mentor <a href="https://github.com/purva-thakre">Purva</a> had many helpful comments to maximize the tutorial's pedagogical value. Her question about whether PBM was the worst-case PGM made me realize I needed to clarify P_Worst. PGM approximates the best-case success probability (P_Best), while PBM approximates the worst-case (P_Worst), but it's not guaranteed to be the absolute worst measurement in every scenario. That PR was ✨ merged ✨ on August 15th!</p>
+            <p>I also took on some lingering doc build issues. Following  <a href = "https://github.com/vprusso/toqito/pull/1290#issuecomment-3150141780">Vincent's advice</a>, I moved the examples folder into the docs folder, which required a neat Sphinx hook in `conf.py` to silence some warnings. 
+
+            <figure>
+                <img src="images/screenshot.png" alt="Mentor approval">
+                <figcaption>Purva agreed with this approach too!</figcaption>
+            </figure>
+
+            Then, I tackled some pesky reStructuredText formatting errors. 
+            <p>
+                The following PowerShell snippet reads lines 985 to 1005 from a file. It was a cool trick I learned to pinpoint the exact location of formatting errors in the Sphinx documentation by printing the lines with their correct numbers.
+            </p>
+                    
+            <div class="code-block-terminal">
+                <span class="code-comment"># Set the starting line number for our search</span>
+                <span class="code-variable">$start</span> = 984
+
+                <span class="code-command">Get-Content</span> <span class="code-string">"toqito\docs\auto_examples\quantumgames\example_extended_nonlocal_games.rst"</span> <span class="code-pipe">|</span>
+                    <span class="code-comment"># Select a range of lines based on our start index</span>
+                    <span class="code-command">Select-Object</span> -Index (<span class="code-variable">$start</span>..(<span class="code-variable">$start</span>+20)) <span class="code-pipe">|</span>
+                    <span class="code-comment"># Process each selected line</span>
+                    <span class="code-command">ForEach-Object</span> -Begin { <span class="code-variable">$i</span> = <span class="code-variable">$start</span> + 1 } -Process { <span class="code-string">"${i}: $_"</span>; <span class="code-variable">$i</span>++ }
+            </div>
+
+            <p>
+                It's amazing how much you learn about tooling while focusing on the science!
+            </p>            
+        </div>
+    </article>
+
+    <article class="timeline-entry challenge">
+        <h2 class="entry-title">Weeks 12-13: The Bit Commitment Conundrum</h2>
+        <p class="entry-date">August 30, 2025</p>
+        <div class="entry-content">
+            <p>The <a href="https://github.com/vprusso/toqito/blob/master/toqito/nonlocal_games/extended_nonlocal_game.py">ExtendedNonlocalGames</a> module is one of the most fascinating parts of |toqito⟩. In a nutshell, it's a powerful toolkit on its own for analyzing complex games by computing four different values that bound the true quantum advantage:</p>
+            <blockquote>unentangled_value ≤ quantum_value_lower_bound ≤ <b>True Quantum Value</b> ≤ commuting_measurement_value_upper_bound ≤ nonsignaling_value</blockquote>
+            <ul>
+                <li>The <strong>unentangled value</strong> is your classical baseline.</li>
+                <li>The <strong>see-saw method</strong> gives you an achievable quantum strategy (a lower bound).</li>
+                <li>The <strong>NPA hierarchy</strong> gives you an unbeatable quantum ceiling (an upper bound).</li>
+                <li>If these bounds are close, you've pinned down the true quantum value!</li>
+                <li>The <strong>nonsignaling value</strong> is the ultimate theoretical limit, constrained only by relativity.</li>
+            </ul>
+            <p>The <a href="https://toqito.readthedocs.io/en/latest/auto_examples/nonlocal_games/example_extended_nonlocal_games.html#sphx-glr-auto-examples-nonlocal-games-example-extended-nonlocal-games-py">existing documentation</a> already used the BB84 protocol as a great example. I decided to add another important use case from quantum cryptography: bit commitment. For this, I studied two classic papers: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167278998000530">Lo & Chau's</a> and <a href="https://arxiv.org/abs/quant-ph/9605044">Mayers'</a>, which both prove why unconditionally secure quantum bit commitment is impossible. I made a <a href="https://github.com/vprusso/toqito/pull/1303">Pull Request</a> modeling Alice's ability to cheat (the binding failure) as an ENLG. Vincent suggested I could push this example further to see how the framework can be more useful for analyzing bit commitment, so that's something I'll be exploring more!</p>
+            <p>Finally, based on Purva's suggestion, I submitted <a href="https://github.com/vprusso/toqito/pull/1313">this PR</a> to refactor the structure of the tutorials to improve their pedagogical flow. Every little bit helps the next person who comes to learn!</p>
+            <figure>
+                <img src="images/PR.png" alt="pr">
+                <figcaption>My PR explaining the refactoring and reordering I did</figcaption>
+            </figure>
+        </div>
+    </article>
+
+    <article class="timeline-entry success">
+        <h2 class="entry-title">Wrapping up: Beyond GSoC</h2>
+        <p class="entry-date">August 31, 2025</p>
+        <div class="entry-content">
+            <p>The GSoC notification just landed: less than 36 hours to go! This whole experience has been a blast. Over the past three months, I've realized that I want to pursue quantum information theory research going forward. Contributing to open-source has been incredibly fulfilling, but it's the deep engagement with research questions that has truly captivated me.</p>
+            <p>I've already discussed with my mentors continuing to contribute tutorials beyond GSoC, particularly on the NPA Hierarchy, Separability, and quantum channels. I've been working on two independent research projects—one on POVMs and another on C-Q channels—both with the help of |toqito⟩. Hopefully, some interesting results will make their way to the examples gallery, further showing how this library can help tackle open questions in this field.</p>
+            <p>For now, adios, and thank you for reading my blog!</p>
+        </div>
+    </article>
+
+
+
+</main>
 
         <footer class="contact">
             <h2 class="section-title">Contact</h2>
